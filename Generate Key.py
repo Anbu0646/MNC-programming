@@ -1,4 +1,4 @@
-/*
+'''
 The program must accept three integers X, Y and Z as the input. Each of these are four-digit integers. 
 The program must generate a four-digit key K based on the following conditions.
 
@@ -28,4 +28,15 @@ Input:  596 7413 2100
 Output: 2406
 
 SOLUTION:
-*/
+'''
+
+X, Y, Z = map(str, input().split())
+
+Thousand_Digits_Numbers   = min(int(X[0]), int(Y[0]), int(Z[0]))
+Hundreds_Digits_Numbers   = max(int(X[1]), int(Y[1]), int(Z[1]))
+Tenth_Digits_Numbers      = min(int(X[2]), int(Y[2]), int(Z[2]))
+Unit_Digits_Numbers       = max(int(X[3]), int(Y[3]), int(Z[3]))
+
+Generated_Key = str(Thousand_Digits_Numbers) + str(Hundreds_Digits_Numbers) + str(Tenth_Digits_Numbers) + str(Unit_Digits_Numbers)
+
+print(Generated_Key)
