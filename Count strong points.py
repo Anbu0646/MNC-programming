@@ -21,13 +21,13 @@ Explanation: The 3 strong points are given below.
 		 92 > [56, 19, 41, 51, 45] 
 		 55 > [19, 41, 31] 
 		 80 > [41, 51, 31] 
-Hence the output is 3. 
+	     Hence the output is 3. 
 
 Example Input/Output 2: 
 
 Input: 6 5 
-	 69 45 47 35 62 
-	 43 68 22 55 72 
+       69 45 47 35 62 
+       43 68 22 55 72 
        53 96 21 24 49
        89 34 86 10 37 
        94 31 93 12 70 
