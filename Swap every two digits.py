@@ -30,3 +30,13 @@ Explanation: After swapping every two digits in X, it becomes 150.
 
 SOLUTION:
 '''
+
+X, Y = map(int, input().split())
+Liz_X = list(str(X)); Liz_Y = list(str(Y))
+for i in range(0, len(Liz_X) - 1, 2):
+    Liz_X[i], Liz_X[i + 1] = Liz_X[i + 1], Liz_X[i]
+    X = int("".join(Liz_X))
+for j in range(0, len(Liz_Y) - 1, 2):
+    Liz_Y[j], Liz_Y[j + 1] = Liz_Y[j + 1], Liz_Y[j]
+    Y = int("".join(Liz_Y))
+print(X+Y)
