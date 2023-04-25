@@ -28,3 +28,22 @@ Output: 6
 
 SOLUTION:
 '''
+
+def armstrong_num(X):
+    armstrong_num = sum(int(i)**len(X) for i in X)
+    return armstrong_num == int(X)
+
+N = input().strip()
+Even_sum = 0
+Odd_sum = 0
+
+for i in N:
+    if int(i)%2 != 0:
+        Odd_sum += int(i)
+    else:
+        Even_sum += int(i)
+    
+if armstrong_num(N):
+    print(Even_sum)
+else:
+    print(Odd_sum)
