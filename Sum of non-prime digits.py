@@ -32,3 +32,23 @@ Output: -1
 
 SOLUTION:
 '''
+
+def isprime(N):
+    if N<=1:
+        return False
+    for i in range(2, N+1):
+        if N%i == 0:
+            return False
+    return True
+    
+N = input().strip()
+flag = 0
+sumq = 0
+
+for i in N:
+    if not isprime(int(i)):
+        sumq+=int(i) 
+        flag = 1
+
+if flag==0: print(-1)
+else: print(sumq)
