@@ -30,3 +30,11 @@ Output: INVALID INPUT
 
 SOLUTION:
 '''
+
+N = int(input())
+
+if N == 0: print(0)
+elif N >= 1 and N <= 2000: print(25)
+elif N >= 2001 and N <= 4000: print(35)
+elif N > 4000 and N <= 7000: print(45)
+else: print("OVERLOADED" if N > 7000 else "INVALID INPUT")
